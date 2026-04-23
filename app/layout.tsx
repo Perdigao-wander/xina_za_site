@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Xina Za - Preservação de Dialetos de São Tomé e Príncipe",
     description:
         "Plataforma digital para preservação, estudo e ensino dos dialetos e línguas de São Tomé e Príncipe (Forro, Angolar, Lunguyê, etc.)",
-    url: "https://xina-za-site-kt2d.vercel.app/", // Altera para o teu domínio real
+    url: "https://xina-za-site.vercel.app/", // Altera para o teu domínio real
     siteName: "Xina Za",
     locale: "pt_PT",
     type: "website",
