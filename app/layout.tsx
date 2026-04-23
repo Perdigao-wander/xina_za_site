@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     title: "Xina Za - Preservação de Dialetos de São Tomé e Príncipe",
     description:
         "Plataforma digital para preservação, estudo e ensino dos dialetos e línguas de São Tomé e Príncipe (Forro, Angolar, Lunguyê, etc.)",
-    url: "https://xinaza.com", // Altera para o teu domínio real
+    url: "https://xina-za-site-kt2d.vercel.app/", // Altera para o teu domínio real
     siteName: "Xina Za",
     locale: "pt_PT",
     type: "website",
     images: [
       {
-        url: "/assets/Xina_za_transparente.png", // Adiciona uma imagem OG depois
+        url: "/assets/Xina_za_transparente.png",
         width: 1200,
         height: 630,
         alt: "Xina Za — Aprende Dialetos de Forma Autêntica",
@@ -54,6 +54,23 @@ export const metadata: Metadata = {
     images: ["/assets/Xina_za_transparente.png"],
     creator: "@xinaza", // Altera para o teu Twitter/X real
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/safari-pinned-tab.svg",
+        color: "#ec4899",
+      },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
@@ -63,10 +80,6 @@ export const metadata: Metadata = {
       follow: true,
       noimageindex: false,
     },
-  },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
   viewport: {
