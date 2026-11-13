@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -11,6 +11,14 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#000000",
+  colorScheme: "light dark",
+};
 
 export const metadata: Metadata = {
   title: "Xina Za - Preservação de Dialetos de São Tomé e Príncipe",
@@ -34,7 +42,7 @@ export const metadata: Metadata = {
     title: "Xina Za - Preservação de Dialetos de São Tomé e Príncipe",
     description:
         "Plataforma digital para preservação, estudo e ensino dos dialetos e línguas de São Tomé e Príncipe (Forro, Angolar, Lunguyê, etc.)",
-    url: "https://xina-za-site.vercel.app/", // Altera para o teu domínio real
+    url: "https://xina-za-site.vercel.app/",
     siteName: "Xina Za",
     locale: "pt_PT",
     type: "website",
@@ -50,9 +58,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Xina Za - Preservação de Dialetos de São Tomé e Príncipe",
-    description:         "Plataforma digital para preservação, estudo e ensino dos dialetos e línguas de São Tomé e Príncipe (Forro, Angolar, Lunguyê, etc.)",
+    description: "Plataforma digital para preservação, estudo e ensino dos dialetos e línguas de São Tomé e Príncipe (Forro, Angolar, Lunguyê, etc.)",
     images: ["/assets/Xina_za_transparente.png"],
-    creator: "@xinaza", // Altera para o teu Twitter/X real
+    creator: "@xinaza",
   },
   icons: {
     icon: [
@@ -82,13 +90,6 @@ export const metadata: Metadata = {
     },
   },
   manifest: "/site.webmanifest",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-  themeColor: "#000000",
-  colorScheme: "light dark",
   category: "education",
 };
 
